@@ -5,8 +5,10 @@
 <script>
 import $ from 'jquery'
 import echarts from 'echarts'
-// eslint-disable-next-line no-unused-vars
-import world from 'echarts/map/js/world.js'
+import '../../node_modules/echarts/map/js/world.js'
+// import '../../node_modules/echarts/map/js/worldZH.js'
+// import world from 'echarts/map/js/worldZH.js'
+// import world from 'echarts/map/js/word.js'
 
 export default {
   data () {
