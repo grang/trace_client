@@ -252,29 +252,30 @@ export default {
           '某海关': [120.418922, 32.183969] // 根据需要更改此处地名和经纬度即可
         },
         regionData: [],
-        hg_zt_data_lines1: [], // 地图线条出入境总体情况数据来回跑得点6-20名
-        hg_zt_data_lines2: [], // 地图线条出入境总体情况数据6-20名
+        hg_zt_data_lines1: [], // 地图线条出入关总体情况数据来回跑得点6-20名
+        hg_zt_data_lines2: [], // 地图线条出入关总体情况数据6-20名
         hg_zt_data_lines1_top5: [], // 前五名
         hg_zt_data_lines2_top5: [], // 前五名
 
         // 出境
         hg_cj_data_lines: [], // 6-20名
         hg_cj_data_lines_top5: [], // 前五名
-        // 入境
+        // 入关
         hg_rj_data_lines: [], // 6-20名
         hg_rj_data_lines_top5: [], // 前五名
         // 线条末端点点
-        point_data_crj: [], // 出入境
+        point_data_crj: [], // 出入关
         point_data_cj: [], // 出境
-        point_data_rj: [], // 入境
+        point_data_rj: [], // 入关
         // valueMap中的最大值最小值
         min: 0,
         max: 0,
 
         hg_zt_json: [{ 'cname': '中国香港', 'itemcode': '344', 'tcc': 1036.0, 'tvus': 38666.424, 'declnoCn': null }, { 'cname': '美国', 'itemcode': '840', 'tcc': 488.0, 'tvus': 3398.382, 'declnoCn': null }, { 'cname': '印度尼西亚', 'itemcode': '360', 'tcc': 276.0, 'tvus': 1885.393, 'declnoCn': null }, { 'cname': '新加坡', 'itemcode': '702', 'tcc': 221.0, 'tvus': 7536.933, 'declnoCn': null }, { 'cname': '越南', 'itemcode': '704', 'tcc': 216.0, 'tvus': 4508.869, 'declnoCn': null }, { 'cname': '日本', 'itemcode': '392', 'tcc': 127.0, 'tvus': 5314.732, 'declnoCn': null }, { 'cname': '墨西哥', 'itemcode': '484', 'tcc': 93.0, 'tvus': 508.838, 'declnoCn': null }, { 'cname': '德国', 'itemcode': '276', 'tcc': 88.0, 'tvus': 760.449, 'declnoCn': null }, { 'cname': '韩国', 'itemcode': '410', 'tcc': 81.0, 'tvus': 1999.957, 'declnoCn': null }, { 'cname': '法国', 'itemcode': '250', 'tcc': 67.0, 'tvus': 222.893, 'declnoCn': null }, { 'cname': '中国台湾', 'itemcode': '158', 'tcc': 63.0, 'tvus': 691.455, 'declnoCn': null }, { 'cname': '马来西亚', 'itemcode': '458', 'tcc': 60.0, 'tvus': 1213.809, 'declnoCn': null }, { 'cname': '加拿大', 'itemcode': '124', 'tcc': 60.0, 'tvus': 1041.583, 'declnoCn': null }, { 'cname': '泰国', 'itemcode': '764', 'tcc': 59.0, 'tvus': 599.239, 'declnoCn': null }, { 'cname': '以色列', 'itemcode': '376', 'tcc': 58.0, 'tvus': 333.721, 'declnoCn': null }, { 'cname': '伊朗', 'itemcode': '364', 'tcc': 55.0, 'tvus': 520.063, 'declnoCn': null }, { 'cname': '意大利', 'itemcode': '380', 'tcc': 53.0, 'tvus': 557.737, 'declnoCn': null }, { 'cname': '英国', 'itemcode': '826', 'tcc': 41.0, 'tvus': 1461.128, 'declnoCn': null }, { 'cname': '印度', 'itemcode': '356', 'tcc': 34.0, 'tvus': 12.809, 'declnoCn': null }, { 'cname': '澳大利亚', 'itemcode': '036', 'tcc': 26.0, 'tvus': 511.352, 'declnoCn': null }, { 'cname': '西班牙', 'itemcode': '724', 'tcc': 24.0, 'tvus': 74.199, 'declnoCn': null }, { 'cname': '缅甸', 'itemcode': '104', 'tcc': 23.0, 'tvus': 9.706, 'declnoCn': null }, { 'cname': '菲律宾', 'itemcode': '608', 'tcc': 21.0, 'tvus': 219.078, 'declnoCn': null }, { 'cname': '中国', 'itemcode': '156', 'tcc': 19.0, 'tvus': 4052.807, 'declnoCn': null }, { 'cname': '比利时', 'itemcode': '056', 'tcc': 18.0, 'tvus': 59.988, 'declnoCn': null }, { 'cname': '瑞士', 'itemcode': '756', 'tcc': 14.0, 'tvus': 31.189, 'declnoCn': null }, { 'cname': '阿联酋', 'itemcode': '784', 'tcc': 13.0, 'tvus': 12.323, 'declnoCn': null }, { 'cname': '老挝', 'itemcode': '418', 'tcc': 12.0, 'tvus': 10.56, 'declnoCn': null }, { 'cname': '冰岛', 'itemcode': '352', 'tcc': 12.0, 'tvus': 7.12, 'declnoCn': null }, { 'cname': '俄罗斯', 'itemcode': '643', 'tcc': 11.0, 'tvus': 75.697, 'declnoCn': null }, { 'cname': '荷兰', 'itemcode': '528', 'tcc': 11.0, 'tvus': 27.893, 'declnoCn': null }, { 'cname': '新西兰', 'itemcode': '554', 'tcc': 10.0, 'tvus': 116.475, 'declnoCn': null }, { 'cname': '哥斯达黎加', 'itemcode': '188', 'tcc': 10.0, 'tvus': 52.725, 'declnoCn': null }, { 'cname': '奥地利', 'itemcode': '040', 'tcc': 10.0, 'tvus': 45.632, 'declnoCn': null }, { 'cname': '丹麦', 'itemcode': '208', 'tcc': 10.0, 'tvus': 26.194, 'declnoCn': null }, { 'cname': '智利', 'itemcode': '152', 'tcc': 8.0, 'tvus': 580.71, 'declnoCn': null }, { 'cname': '瑞典', 'itemcode': '752', 'tcc': 7.0, 'tvus': 34.548, 'declnoCn': null }, { 'cname': '柬埔寨', 'itemcode': '116', 'tcc': 7.0, 'tvus': 2.873, 'declnoCn': null }, { 'cname': '阿曼', 'itemcode': '512', 'tcc': 6.0, 'tvus': 231.0, 'declnoCn': null }, { 'cname': '秘鲁', 'itemcode': '604', 'tcc': 6.0, 'tvus': 39.93, 'declnoCn': null }, { 'cname': '科特迪瓦', 'itemcode': '384', 'tcc': 6.0, 'tvus': 15.198, 'declnoCn': null }, { 'cname': '巴西', 'itemcode': '076', 'tcc': 6.0, 'tvus': 4.4, 'declnoCn': null }, { 'cname': '马里', 'itemcode': '466', 'tcc': 5.0, 'tvus': 17.137, 'declnoCn': null }, { 'cname': '中国澳门', 'itemcode': '446', 'tcc': 4.0, 'tvus': 510.853, 'declnoCn': null }, { 'cname': '加纳', 'itemcode': '288', 'tcc': 4.0, 'tvus': 66.56, 'declnoCn': null }, { 'cname': '马绍尔群岛', 'itemcode': '584', 'tcc': 4.0, 'tvus': 49.094, 'declnoCn': null }, { 'cname': '波兰', 'itemcode': '616', 'tcc': 4.0, 'tvus': 20.05, 'declnoCn': null }, { 'cname': '葡萄牙', 'itemcode': '620', 'tcc': 3.0, 'tvus': 11.949, 'declnoCn': null }, { 'cname': '肯尼亚', 'itemcode': '404', 'tcc': 3.0, 'tvus': 10.196, 'declnoCn': null }, { 'cname': '埃及', 'itemcode': '818', 'tcc': 3.0, 'tvus': 2.142, 'declnoCn': null }, { 'cname': '捷克', 'itemcode': '203', 'tcc': 2.0, 'tvus': 27.456, 'declnoCn': null }, { 'cname': '乌兹别克斯坦', 'itemcode': '860', 'tcc': 2.0, 'tvus': 15.563, 'declnoCn': null }, { 'cname': '南非', 'itemcode': '710', 'tcc': 2.0, 'tvus': 14.784, 'declnoCn': null }, { 'cname': '巴基斯坦', 'itemcode': '586', 'tcc': 2.0, 'tvus': 13.95, 'declnoCn': null }, { 'cname': '毛里求斯', 'itemcode': '480', 'tcc': 2.0, 'tvus': 12.49, 'declnoCn': null }, { 'cname': '贝宁', 'itemcode': '204', 'tcc': 2.0, 'tvus': 5.876, 'declnoCn': null }, { 'cname': '斯洛伐克', 'itemcode': '703', 'tcc': 2.0, 'tvus': 4.025, 'declnoCn': null }, { 'cname': '保加利亚', 'itemcode': '100', 'tcc': 2.0, 'tvus': 3.562, 'declnoCn': null }, { 'cname': '拉脱维亚', 'itemcode': '428', 'tcc': 2.0, 'tvus': 1.551, 'declnoCn': null }, { 'cname': '科威特', 'itemcode': '414', 'tcc': 2.0, 'tvus': 1.266, 'declnoCn': null }, { 'cname': '巴哈马', 'itemcode': '044', 'tcc': 1.0, 'tvus': 11967.569, 'declnoCn': null }, { 'cname': '摩洛哥', 'itemcode': '504', 'tcc': 1.0, 'tvus': 8.524, 'declnoCn': null }, { 'cname': '埃塞俄比亚', 'itemcode': '231', 'tcc': 1.0, 'tvus': 8.472, 'declnoCn': null }, { 'cname': '乌克兰', 'itemcode': '804', 'tcc': 1.0, 'tvus': 7.661, 'declnoCn': null }, { 'cname': '古巴', 'itemcode': '192', 'tcc': 1.0, 'tvus': 6.523, 'declnoCn': null }, { 'cname': '哥伦比亚', 'itemcode': '170', 'tcc': 1.0, 'tvus': 5.58, 'declnoCn': null }, { 'cname': '约旦', 'itemcode': '400', 'tcc': 1.0, 'tvus': 4.14, 'declnoCn': null }, { 'cname': '斯洛文尼亚', 'itemcode': '705', 'tcc': 1.0, 'tvus': 3.6, 'declnoCn': null }, { 'cname': '中非', 'itemcode': '140', 'tcc': 1.0, 'tvus': 3.058, 'declnoCn': null }, { 'cname': '列支敦士登', 'itemcode': '438', 'tcc': 1.0, 'tvus': 2.826, 'declnoCn': null }, { 'cname': '喀麦隆', 'itemcode': '120', 'tcc': 1.0, 'tvus': 2.75, 'declnoCn': null }, { 'cname': '委内瑞拉', 'itemcode': '862', 'tcc': 1.0, 'tvus': 1.919, 'declnoCn': null }, { 'cname': '塞舌尔', 'itemcode': '690', 'tcc': 1.0, 'tvus': 1.718, 'declnoCn': null }, { 'cname': '孟加拉', 'itemcode': '050', 'tcc': 1.0, 'tvus': 0.914, 'declnoCn': null }],
         hg_cj_json: [{ 'cname': '美国', 'itemcode': '840', 'tcc': 405.0, 'tvus': 2305.75, 'declnoCn': '出境' }, { 'cname': '中国香港', 'itemcode': '344', 'tcc': 168.0, 'tvus': 2338.967, 'declnoCn': '出境' }, { 'cname': '墨西哥', 'itemcode': '484', 'tcc': 89.0, 'tvus': 473.612, 'declnoCn': '出境' }, { 'cname': '日本', 'itemcode': '392', 'tcc': 87.0, 'tvus': 755.092, 'declnoCn': '出境' }, { 'cname': '以色列', 'itemcode': '376', 'tcc': 58.0, 'tvus': 333.721, 'declnoCn': '出境' }, { 'cname': '伊朗', 'itemcode': '364', 'tcc': 55.0, 'tvus': 520.063, 'declnoCn': '出境' }, { 'cname': '韩国', 'itemcode': '410', 'tcc': 53.0, 'tvus': 544.506, 'declnoCn': '出境' }, { 'cname': '马来西亚', 'itemcode': '458', 'tcc': 47.0, 'tvus': 455.245, 'declnoCn': '出境' }, { 'cname': '印度', 'itemcode': '356', 'tcc': 30.0, 'tvus': 0.804, 'declnoCn': '出境' }, { 'cname': '泰国', 'itemcode': '764', 'tcc': 28.0, 'tvus': 101.542, 'declnoCn': '出境' }, { 'cname': '缅甸', 'itemcode': '104', 'tcc': 23.0, 'tvus': 9.706, 'declnoCn': '出境' }, { 'cname': '比利时', 'itemcode': '056', 'tcc': 17.0, 'tvus': 57.876, 'declnoCn': '出境' }, { 'cname': '加拿大', 'itemcode': '124', 'tcc': 15.0, 'tvus': 80.19, 'declnoCn': '出境' }, { 'cname': '老挝', 'itemcode': '418', 'tcc': 12.0, 'tvus': 10.56, 'declnoCn': '出境' }, { 'cname': '法国', 'itemcode': '250', 'tcc': 11.0, 'tvus': 32.975, 'declnoCn': '出境' }, { 'cname': '英国', 'itemcode': '826', 'tcc': 11.0, 'tvus': 41.453, 'declnoCn': '出境' }, { 'cname': '俄罗斯', 'itemcode': '643', 'tcc': 11.0, 'tvus': 75.697, 'declnoCn': '出境' }, { 'cname': '中国台湾', 'itemcode': '158', 'tcc': 10.0, 'tvus': 30.509, 'declnoCn': '出境' }, { 'cname': '菲律宾', 'itemcode': '608', 'tcc': 10.0, 'tvus': 144.692, 'declnoCn': '出境' }, { 'cname': '哥斯达黎加', 'itemcode': '188', 'tcc': 10.0, 'tvus': 52.725, 'declnoCn': '出境' }, { 'cname': '意大利', 'itemcode': '380', 'tcc': 9.0, 'tvus': 47.681, 'declnoCn': '出境' }, { 'cname': '德国', 'itemcode': '276', 'tcc': 8.0, 'tvus': 24.748, 'declnoCn': '出境' }, { 'cname': '西班牙', 'itemcode': '724', 'tcc': 7.0, 'tvus': 50.189, 'declnoCn': '出境' }, { 'cname': '荷兰', 'itemcode': '528', 'tcc': 7.0, 'tvus': 23.987, 'declnoCn': '出境' }, { 'cname': '科特迪瓦', 'itemcode': '384', 'tcc': 6.0, 'tvus': 15.198, 'declnoCn': '出境' }, { 'cname': '柬埔寨', 'itemcode': '116', 'tcc': 6.0, 'tvus': 0.0, 'declnoCn': '出境' }, { 'cname': '秘鲁', 'itemcode': '604', 'tcc': 6.0, 'tvus': 39.93, 'declnoCn': '出境' }, { 'cname': '印度尼西亚', 'itemcode': '360', 'tcc': 5.0, 'tvus': 22.62, 'declnoCn': '出境' }, { 'cname': '马里', 'itemcode': '466', 'tcc': 5.0, 'tvus': 17.137, 'declnoCn': '出境' }, { 'cname': '智利', 'itemcode': '152', 'tcc': 5.0, 'tvus': 23.512, 'declnoCn': '出境' }, { 'cname': '巴西', 'itemcode': '076', 'tcc': 5.0, 'tvus': 0.004, 'declnoCn': '出境' }, { 'cname': '波兰', 'itemcode': '616', 'tcc': 4.0, 'tvus': 20.05, 'declnoCn': '出境' }, { 'cname': '中国', 'itemcode': '156', 'tcc': 4.0, 'tvus': 3297.5, 'declnoCn': '出境' }, { 'cname': '加纳', 'itemcode': '288', 'tcc': 4.0, 'tvus': 66.56, 'declnoCn': '出境' }, { 'cname': '肯尼亚', 'itemcode': '404', 'tcc': 3.0, 'tvus': 10.196, 'declnoCn': '出境' }, { 'cname': '瑞典', 'itemcode': '752', 'tcc': 3.0, 'tvus': 9.669, 'declnoCn': '出境' }, { 'cname': '丹麦', 'itemcode': '208', 'tcc': 3.0, 'tvus': 24.059, 'declnoCn': '出境' }, { 'cname': '澳大利亚', 'itemcode': '036', 'tcc': 3.0, 'tvus': 0.375, 'declnoCn': '出境' }, { 'cname': '越南', 'itemcode': '704', 'tcc': 3.0, 'tvus': 3.675, 'declnoCn': '出境' }, { 'cname': '葡萄牙', 'itemcode': '620', 'tcc': 2.0, 'tvus': 9.666, 'declnoCn': '出境' }, { 'cname': '科威特', 'itemcode': '414', 'tcc': 2.0, 'tvus': 1.266, 'declnoCn': '出境' }, { 'cname': '乌兹别克斯坦', 'itemcode': '860', 'tcc': 2.0, 'tvus': 15.563, 'declnoCn': '出境' }, { 'cname': '贝宁', 'itemcode': '204', 'tcc': 2.0, 'tvus': 5.876, 'declnoCn': '出境' }, { 'cname': '毛里求斯', 'itemcode': '480', 'tcc': 2.0, 'tvus': 12.49, 'declnoCn': '出境' }, { 'cname': '埃及', 'itemcode': '818', 'tcc': 2.0, 'tvus': 0.0, 'declnoCn': '出境' }, { 'cname': '埃塞俄比亚', 'itemcode': '231', 'tcc': 1.0, 'tvus': 8.472, 'declnoCn': '出境' }, { 'cname': '古巴', 'itemcode': '192', 'tcc': 1.0, 'tvus': 6.523, 'declnoCn': '出境' }, { 'cname': '孟加拉', 'itemcode': '050', 'tcc': 1.0, 'tvus': 0.914, 'declnoCn': '出境' }, { 'cname': '斯洛文尼亚', 'itemcode': '705', 'tcc': 1.0, 'tvus': 3.6, 'declnoCn': '出境' }, { 'cname': '南非', 'itemcode': '710', 'tcc': 1.0, 'tvus': 2.3, 'declnoCn': '出境' }, { 'cname': '喀麦隆', 'itemcode': '120', 'tcc': 1.0, 'tvus': 2.75, 'declnoCn': '出境' }, { 'cname': '巴基斯坦', 'itemcode': '586', 'tcc': 1.0, 'tvus': 1.45, 'declnoCn': '出境' }, { 'cname': '新加坡', 'itemcode': '702', 'tcc': 1.0, 'tvus': 4.72, 'declnoCn': '出境' }, { 'cname': '捷克', 'itemcode': '203', 'tcc': 1.0, 'tvus': 0.569, 'declnoCn': '出境' }, { 'cname': '哥伦比亚', 'itemcode': '170', 'tcc': 1.0, 'tvus': 5.58, 'declnoCn': '出境' }, { 'cname': '乌克兰', 'itemcode': '804', 'tcc': 1.0, 'tvus': 7.661, 'declnoCn': '出境' }, { 'cname': '中非', 'itemcode': '140', 'tcc': 1.0, 'tvus': 3.058, 'declnoCn': '出境' }, { 'cname': '阿联酋', 'itemcode': '784', 'tcc': 1.0, 'tvus': 0.98, 'declnoCn': '出境' }, { 'cname': '约旦', 'itemcode': '400', 'tcc': 1.0, 'tvus': 4.14, 'declnoCn': '出境' }],
-        hg_rj_json: [{ 'cname': '中国香港', 'itemcode': '344', 'tcc': 868.0, 'tvus': 36327.457, 'declnoCn': '入境' }, { 'cname': '印度尼西亚', 'itemcode': '360', 'tcc': 271.0, 'tvus': 1862.773, 'declnoCn': '入境' }, { 'cname': '新加坡', 'itemcode': '702', 'tcc': 220.0, 'tvus': 7532.213, 'declnoCn': '入境' }, { 'cname': '越南', 'itemcode': '704', 'tcc': 213.0, 'tvus': 4505.194, 'declnoCn': '入境' }, { 'cname': '美国', 'itemcode': '840', 'tcc': 83.0, 'tvus': 1092.632, 'declnoCn': '入境' }, { 'cname': '德国', 'itemcode': '276', 'tcc': 80.0, 'tvus': 735.701, 'declnoCn': '入境' }, { 'cname': '法国', 'itemcode': '250', 'tcc': 56.0, 'tvus': 189.918, 'declnoCn': '入境' }, { 'cname': '中国台湾', 'itemcode': '158', 'tcc': 53.0, 'tvus': 660.946, 'declnoCn': '入境' }, { 'cname': '加拿大', 'itemcode': '124', 'tcc': 45.0, 'tvus': 961.393, 'declnoCn': '入境' }, { 'cname': '意大利', 'itemcode': '380', 'tcc': 44.0, 'tvus': 510.056, 'declnoCn': '入境' }, { 'cname': '日本', 'itemcode': '392', 'tcc': 40.0, 'tvus': 4559.64, 'declnoCn': '入境' }, { 'cname': '泰国', 'itemcode': '764', 'tcc': 31.0, 'tvus': 497.697, 'declnoCn': '入境' }, { 'cname': '英国', 'itemcode': '826', 'tcc': 30.0, 'tvus': 1419.675, 'declnoCn': '入境' }, { 'cname': '韩国', 'itemcode': '410', 'tcc': 28.0, 'tvus': 1455.451, 'declnoCn': '入境' }, { 'cname': '澳大利亚', 'itemcode': '036', 'tcc': 23.0, 'tvus': 510.977, 'declnoCn': '入境' }, { 'cname': '西班牙', 'itemcode': '724', 'tcc': 17.0, 'tvus': 24.01, 'declnoCn': '入境' }, { 'cname': '中国', 'itemcode': '156', 'tcc': 15.0, 'tvus': 755.307, 'declnoCn': '入境' }, { 'cname': '瑞士', 'itemcode': '756', 'tcc': 14.0, 'tvus': 31.189, 'declnoCn': '入境' }, { 'cname': '马来西亚', 'itemcode': '458', 'tcc': 13.0, 'tvus': 758.564, 'declnoCn': '入境' }, { 'cname': '冰岛', 'itemcode': '352', 'tcc': 12.0, 'tvus': 7.12, 'declnoCn': '入境' }, { 'cname': '阿联酋', 'itemcode': '784', 'tcc': 12.0, 'tvus': 11.343, 'declnoCn': '入境' }, { 'cname': '菲律宾', 'itemcode': '608', 'tcc': 11.0, 'tvus': 74.386, 'declnoCn': '入境' }, { 'cname': '奥地利', 'itemcode': '040', 'tcc': 10.0, 'tvus': 45.632, 'declnoCn': '入境' }, { 'cname': '新西兰', 'itemcode': '554', 'tcc': 10.0, 'tvus': 116.475, 'declnoCn': '入境' }, { 'cname': '丹麦', 'itemcode': '208', 'tcc': 7.0, 'tvus': 2.135, 'declnoCn': '入境' }, { 'cname': '阿曼', 'itemcode': '512', 'tcc': 6.0, 'tvus': 231.0, 'declnoCn': '入境' }, { 'cname': '瑞典', 'itemcode': '752', 'tcc': 4.0, 'tvus': 24.879, 'declnoCn': '入境' }, { 'cname': '墨西哥', 'itemcode': '484', 'tcc': 4.0, 'tvus': 35.226, 'declnoCn': '入境' }, { 'cname': '中国澳门', 'itemcode': '446', 'tcc': 4.0, 'tvus': 510.853, 'declnoCn': '入境' }, { 'cname': '马绍尔群岛', 'itemcode': '584', 'tcc': 4.0, 'tvus': 49.094, 'declnoCn': '入境' }, { 'cname': '印度', 'itemcode': '356', 'tcc': 4.0, 'tvus': 12.005, 'declnoCn': '入境' }, { 'cname': '荷兰', 'itemcode': '528', 'tcc': 4.0, 'tvus': 3.906, 'declnoCn': '入境' }, { 'cname': '智利', 'itemcode': '152', 'tcc': 3.0, 'tvus': 557.198, 'declnoCn': '入境' }, { 'cname': '拉脱维亚', 'itemcode': '428', 'tcc': 2.0, 'tvus': 1.551, 'declnoCn': '入境' }, { 'cname': '斯洛伐克', 'itemcode': '703', 'tcc': 2.0, 'tvus': 4.025, 'declnoCn': '入境' }, { 'cname': '保加利亚', 'itemcode': '100', 'tcc': 2.0, 'tvus': 3.562, 'declnoCn': '入境' }, { 'cname': '列支敦士登', 'itemcode': '438', 'tcc': 1.0, 'tvus': 2.826, 'declnoCn': '入境' }, { 'cname': '摩洛哥', 'itemcode': '504', 'tcc': 1.0, 'tvus': 8.524, 'declnoCn': '入境' }, { 'cname': '葡萄牙', 'itemcode': '620', 'tcc': 1.0, 'tvus': 2.283, 'declnoCn': '入境' }, { 'cname': '塞舌尔', 'itemcode': '690', 'tcc': 1.0, 'tvus': 1.718, 'declnoCn': '入境' }, { 'cname': '巴西', 'itemcode': '076', 'tcc': 1.0, 'tvus': 4.396, 'declnoCn': '入境' }, { 'cname': '巴哈马', 'itemcode': '044', 'tcc': 1.0, 'tvus': 11967.569, 'declnoCn': '入境' }, { 'cname': '巴基斯坦', 'itemcode': '586', 'tcc': 1.0, 'tvus': 12.5, 'declnoCn': '入境' }, { 'cname': '柬埔寨', 'itemcode': '116', 'tcc': 1.0, 'tvus': 2.873, 'declnoCn': '入境' }, { 'cname': '委内瑞拉', 'itemcode': '862', 'tcc': 1.0, 'tvus': 1.919, 'declnoCn': '入境' }, { 'cname': '比利时', 'itemcode': '056', 'tcc': 1.0, 'tvus': 2.112, 'declnoCn': '入境' }, { 'cname': '埃及', 'itemcode': '818', 'tcc': 1.0, 'tvus': 2.142, 'declnoCn': '入境' }, { 'cname': '南非', 'itemcode': '710', 'tcc': 1.0, 'tvus': 12.484, 'declnoCn': '入境' }, { 'cname': '捷克', 'itemcode': '203', 'tcc': 1.0, 'tvus': 26.887, 'declnoCn': '入境' }],
-        option: {}
+        hg_rj_json: [{ 'cname': '中国香港', 'itemcode': '344', 'tcc': 868.0, 'tvus': 36327.457, 'declnoCn': '入关' }, { 'cname': '印度尼西亚', 'itemcode': '360', 'tcc': 271.0, 'tvus': 1862.773, 'declnoCn': '入关' }, { 'cname': '新加坡', 'itemcode': '702', 'tcc': 220.0, 'tvus': 7532.213, 'declnoCn': '入关' }, { 'cname': '越南', 'itemcode': '704', 'tcc': 213.0, 'tvus': 4505.194, 'declnoCn': '入关' }, { 'cname': '美国', 'itemcode': '840', 'tcc': 83.0, 'tvus': 1092.632, 'declnoCn': '入关' }, { 'cname': '德国', 'itemcode': '276', 'tcc': 80.0, 'tvus': 735.701, 'declnoCn': '入关' }, { 'cname': '法国', 'itemcode': '250', 'tcc': 56.0, 'tvus': 189.918, 'declnoCn': '入关' }, { 'cname': '中国台湾', 'itemcode': '158', 'tcc': 53.0, 'tvus': 660.946, 'declnoCn': '入关' }, { 'cname': '加拿大', 'itemcode': '124', 'tcc': 45.0, 'tvus': 961.393, 'declnoCn': '入关' }, { 'cname': '意大利', 'itemcode': '380', 'tcc': 44.0, 'tvus': 510.056, 'declnoCn': '入关' }, { 'cname': '日本', 'itemcode': '392', 'tcc': 40.0, 'tvus': 4559.64, 'declnoCn': '入关' }, { 'cname': '泰国', 'itemcode': '764', 'tcc': 31.0, 'tvus': 497.697, 'declnoCn': '入关' }, { 'cname': '英国', 'itemcode': '826', 'tcc': 30.0, 'tvus': 1419.675, 'declnoCn': '入关' }, { 'cname': '韩国', 'itemcode': '410', 'tcc': 28.0, 'tvus': 1455.451, 'declnoCn': '入关' }, { 'cname': '澳大利亚', 'itemcode': '036', 'tcc': 23.0, 'tvus': 510.977, 'declnoCn': '入关' }, { 'cname': '西班牙', 'itemcode': '724', 'tcc': 17.0, 'tvus': 24.01, 'declnoCn': '入关' }, { 'cname': '中国', 'itemcode': '156', 'tcc': 15.0, 'tvus': 755.307, 'declnoCn': '入关' }, { 'cname': '瑞士', 'itemcode': '756', 'tcc': 14.0, 'tvus': 31.189, 'declnoCn': '入关' }, { 'cname': '马来西亚', 'itemcode': '458', 'tcc': 13.0, 'tvus': 758.564, 'declnoCn': '入关' }, { 'cname': '冰岛', 'itemcode': '352', 'tcc': 12.0, 'tvus': 7.12, 'declnoCn': '入关' }, { 'cname': '阿联酋', 'itemcode': '784', 'tcc': 12.0, 'tvus': 11.343, 'declnoCn': '入关' }, { 'cname': '菲律宾', 'itemcode': '608', 'tcc': 11.0, 'tvus': 74.386, 'declnoCn': '入关' }, { 'cname': '奥地利', 'itemcode': '040', 'tcc': 10.0, 'tvus': 45.632, 'declnoCn': '入关' }, { 'cname': '新西兰', 'itemcode': '554', 'tcc': 10.0, 'tvus': 116.475, 'declnoCn': '入关' }, { 'cname': '丹麦', 'itemcode': '208', 'tcc': 7.0, 'tvus': 2.135, 'declnoCn': '入关' }, { 'cname': '阿曼', 'itemcode': '512', 'tcc': 6.0, 'tvus': 231.0, 'declnoCn': '入关' }, { 'cname': '瑞典', 'itemcode': '752', 'tcc': 4.0, 'tvus': 24.879, 'declnoCn': '入关' }, { 'cname': '墨西哥', 'itemcode': '484', 'tcc': 4.0, 'tvus': 35.226, 'declnoCn': '入关' }, { 'cname': '中国澳门', 'itemcode': '446', 'tcc': 4.0, 'tvus': 510.853, 'declnoCn': '入关' }, { 'cname': '马绍尔群岛', 'itemcode': '584', 'tcc': 4.0, 'tvus': 49.094, 'declnoCn': '入关' }, { 'cname': '印度', 'itemcode': '356', 'tcc': 4.0, 'tvus': 12.005, 'declnoCn': '入关' }, { 'cname': '荷兰', 'itemcode': '528', 'tcc': 4.0, 'tvus': 3.906, 'declnoCn': '入关' }, { 'cname': '智利', 'itemcode': '152', 'tcc': 3.0, 'tvus': 557.198, 'declnoCn': '入关' }, { 'cname': '拉脱维亚', 'itemcode': '428', 'tcc': 2.0, 'tvus': 1.551, 'declnoCn': '入关' }, { 'cname': '斯洛伐克', 'itemcode': '703', 'tcc': 2.0, 'tvus': 4.025, 'declnoCn': '入关' }, { 'cname': '保加利亚', 'itemcode': '100', 'tcc': 2.0, 'tvus': 3.562, 'declnoCn': '入关' }, { 'cname': '列支敦士登', 'itemcode': '438', 'tcc': 1.0, 'tvus': 2.826, 'declnoCn': '入关' }, { 'cname': '摩洛哥', 'itemcode': '504', 'tcc': 1.0, 'tvus': 8.524, 'declnoCn': '入关' }, { 'cname': '葡萄牙', 'itemcode': '620', 'tcc': 1.0, 'tvus': 2.283, 'declnoCn': '入关' }, { 'cname': '塞舌尔', 'itemcode': '690', 'tcc': 1.0, 'tvus': 1.718, 'declnoCn': '入关' }, { 'cname': '巴西', 'itemcode': '076', 'tcc': 1.0, 'tvus': 4.396, 'declnoCn': '入关' }, { 'cname': '巴哈马', 'itemcode': '044', 'tcc': 1.0, 'tvus': 11967.569, 'declnoCn': '入关' }, { 'cname': '巴基斯坦', 'itemcode': '586', 'tcc': 1.0, 'tvus': 12.5, 'declnoCn': '入关' }, { 'cname': '柬埔寨', 'itemcode': '116', 'tcc': 1.0, 'tvus': 2.873, 'declnoCn': '入关' }, { 'cname': '委内瑞拉', 'itemcode': '862', 'tcc': 1.0, 'tvus': 1.919, 'declnoCn': '入关' }, { 'cname': '比利时', 'itemcode': '056', 'tcc': 1.0, 'tvus': 2.112, 'declnoCn': '入关' }, { 'cname': '埃及', 'itemcode': '818', 'tcc': 1.0, 'tvus': 2.142, 'declnoCn': '入关' }, { 'cname': '南非', 'itemcode': '710', 'tcc': 1.0, 'tvus': 12.484, 'declnoCn': '入关' }, { 'cname': '捷克', 'itemcode': '203', 'tcc': 1.0, 'tvus': 26.887, 'declnoCn': '入关' }],
+        option: {},
+        title: '出入关'
       }
     }
   },
@@ -294,7 +295,7 @@ export default {
         var linesdata2 = {}
         var pointdata = {}
 
-        // 出入境总体线条数据
+        // 出入关总体线条数据
         // 前五名红色
         var fromToNameCoords = that.data.geoCoord[p.cname]
         if (!fromToNameCoords) { console.log('该国家未匹配到经纬度:' + p.cname) }
@@ -360,38 +361,36 @@ export default {
             var data = params.data
             if (params.seriesName === 'World_3DMap') {
               // console.log(params);
-              return '<b style="font-size:18px;">出入境总体情况</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
+              return '<b style="font-size:18px;">原材料追溯情况</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
                             data.name +
-                            '</b><br /> 总批次: (批次)<br /> 总货值:  (万美元)<br />业务量排名: <b style="font-size:14px;color:red;"></b> 名'
+                            '</b><br /> 原料：(原料名)<br /> 总批次: (批次)<br /> 生成商:  (生产商)<br /> 入关时间：(入关时间)<br />'
             }
             if (params.seriesName === 'scatter3D') {
               // console.log(params);
               return '<b style="font-size:20px;">北京</b>'
             }
-            if (params.seriesName === '出入境') {
+            if (params.seriesName === this.data.title) {
               // console.log(params);
-              return '<b style="font-size:18px;">出入境总体情况</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
-                            params.name +
-                            '</b><br /> 总批次: ' + data.pc +
-                            ' (批次)<br /> 总货值: ' + data.hz +
-                            ' (万美元)' + '<br />业务量排名: <b style="font-size:14px;color:red;">' + data.pm + '</b> 名'
+              return '<b style="font-size:18px;">原材料追溯情况</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
+                            data.name +
+                            '</b><br /> 原料：(原料名)<br /> 总批次: (批次)<br /> 生成商:  (生产商)<br /> 入关时间：(入关时间)<br />'
             }
-            if (params.seriesName === '出境') {
-              // console.log(params);
-              return '<b style="font-size:18px;">出境</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
-                            params.name +
-                            '</b><br /> 批次: ' + data.pc +
-                            ' (批次)<br /> 货值: ' + data.hz +
-                            ' (万美元)' + '<br />业务量排名: <b style="font-size:14px;color:red;">' + data.pm + '</b> 名'
-            }
-            if (params.seriesName === '入境') {
-              // console.log(params);
-              return '<b style="font-size:18px;">入境</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
-                            params.name +
-                            '</b><br /> 批次: ' + data.pc +
-                            ' (批次)<br /> 货值: ' + data.hz +
-                            ' (万美元)' + '<br />业务量排名: <b style="font-size:14px;color:red;">' + data.pm + '</b> 名'
-            }
+            // if (params.seriesName === '出境') {
+            //   // console.log(params);
+            //   return '<b style="font-size:18px;">出境</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
+            //                 params.name +
+            //                 '</b><br /> 批次: ' + data.pc +
+            //                 ' (批次)<br /> 货值: ' + data.hz +
+            //                 ' (万美元)' + '<br />业务量排名: <b style="font-size:14px;color:red;">' + data.pm + '</b> 名'
+            // }
+            // if (params.seriesName === '入关') {
+            //   // console.log(params);
+            //   return '<b style="font-size:18px;">入关</b><br />国家: <b style="font-size:16px;color:#f4b766;">' +
+            //                 params.name +
+            //                 '</b><br /> 批次: ' + data.pc +
+            //                 ' (批次)<br /> 货值: ' + data.hz +
+            //                 ' (万美元)' + '<br />业务量排名: <b style="font-size:14px;color:red;">' + data.pm + '</b> 名'
+            // }
             return ''
           },
           textStyle: {
@@ -406,12 +405,8 @@ export default {
           top: 10,
           zlevel: 10,
           orient: 'horizontal', // 图例列表的布局朝向。可选：'horizontal','vertical'
-          data: ['出入境', '出境', '入境'],
+          data: [this.data.title, '入关', '出关'],
           selectedMode: 'single', // multiple 多选,single
-          selected: {
-            '出境': false,
-            '入境': false
-          },
           textStyle: {
             color: '#b14516',
             fontWeight: 'bold',
@@ -521,9 +516,9 @@ export default {
             }
           },
           data: this.data.regionData
-        }, { // 出入境总体---进
+        }, { // 出入关总体---进
           type: 'lines3D',
-          name: '出入境',
+          name: this.data.title,
           polyline: true,
           coordinateSystem: 'geo3D',
           zlevel: 5,
@@ -543,31 +538,9 @@ export default {
             }
           },
           data: this.data.hg_zt_data_lines1
-        }, { // 出入境总体---出
+        }, { // 出入关总体---出top5
           type: 'lines3D',
-          name: '出入境',
-          polyline: true,
-          silent: false,
-          coordinateSystem: 'geo3D',
-          zlevel: 5,
-          effect: {
-            show: true,
-            period: 8,
-            trailLength: 0.1,
-            trailColor: '#ffffff',
-            trailWidth: 2
-          },
-          lineStyle: {
-            normal: {
-              color: '#749c21',
-              width: 1,
-              opacity: 1
-            }
-          },
-          data: this.data.hg_zt_data_lines2
-        }, { // 出入境总体---出top5
-          type: 'lines3D',
-          name: '出入境',
+          name: this.data.title,
           polyline: true,
           coordinateSystem: 'geo3D',
           zlevel: 5,
@@ -586,86 +559,6 @@ export default {
             }
           },
           data: this.data.hg_zt_data_lines2_top5
-        }, { // 出境后15名
-          type: 'lines3D',
-          name: '出境',
-          coordinateSystem: 'geo3D',
-          zlevel: 5,
-          effect: {
-            show: true,
-            period: 8,
-            trailLength: 0.1,
-            trailColor: '#ffffff',
-            trailWidth: 2
-          },
-          lineStyle: {
-            normal: {
-              color: '#ffa020',
-              width: 1,
-              opacity: 1
-            }
-          },
-          data: this.data.hg_cj_data_lines
-        }, { // 出境top5
-          type: 'lines3D',
-          name: '出境',
-          coordinateSystem: 'geo3D',
-          zlevel: 5,
-          effect: {
-            show: true,
-            period: 8,
-            trailLength: 0.1,
-            trailColor: '#ffffff',
-            trailWidth: 3
-          },
-          lineStyle: {
-            normal: {
-              color: 'red',
-              width: 2,
-              opacity: 1
-            }
-          },
-          data: this.data.hg_cj_data_lines_top5
-        }, { // 入境后15名
-          type: 'lines3D',
-          name: '入境',
-          coordinateSystem: 'geo3D',
-          zlevel: 5,
-          effect: {
-            show: true,
-            period: 8,
-            trailLength: 0.1,
-            trailColor: '#ffffff',
-            trailWidth: 2
-          },
-          lineStyle: {
-            normal: {
-              color: '#41ce95',
-              width: 1,
-              opacity: 1
-            }
-          },
-          data: this.data.hg_rj_data_lines
-        }, { // 入境top5
-          type: 'lines3D',
-          name: '入境',
-          coordinateSystem: 'geo3D',
-          zlevel: 5,
-          effect: {
-            show: true,
-            period: 8,
-            trailLength: 0.1,
-            trailColor: '#ffffff',
-            trailWidth: 3
-          },
-          lineStyle: {
-            normal: {
-              color: 'red',
-              width: 2,
-              opacity: 1
-            }
-          },
-          data: this.data.hg_rj_data_lines_top5
         }, { // 红色五角星
           name: 'scatter3D',
           type: 'scatter3D',
@@ -685,7 +578,7 @@ export default {
             [116.394653, 39.913950, '北京']
           ]
         }, { // 线条末端点点
-          name: '出入境',
+          name: this.data.title,
           type: 'scatter3D',
           coordinateSystem: 'geo3D',
           symbol: 'circle', // 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
@@ -707,53 +600,7 @@ export default {
             }
           },
           data: this.data.point_data_crj
-        }, { // 线条末端点点
-          name: '出境',
-          type: 'scatter3D',
-          coordinateSystem: 'geo3D',
-          symbol: 'circle', // 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
-          symbolSize: 10,
-          opacity: 1,
-          zlevel: 5,
-          itemStyle: {
-            color: '#ffa022',
-            borderWidth: 1,
-            borderColor: '#f9d78a',
-            opacity: 1
-          },
-          emphasis: { // 当鼠标放上去  地区区域是否显示名称
-            itemStyle: {
-              color: '#9ce7f2'
-            },
-            label: {
-              show: false
-            }
-          },
-          data: this.data.point_data_cj
-        }, { // 线条末端点点
-          name: '入境',
-          type: 'scatter3D',
-          coordinateSystem: 'geo3D',
-          symbol: 'circle', // 'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
-          symbolSize: 10,
-          opacity: 1,
-          zlevel: 5,
-          itemStyle: {
-            color: '#ffa022',
-            borderWidth: 1,
-            borderColor: '#f9d78a',
-            opacity: 1
-          },
-          emphasis: { // 当鼠标放上去  地区区域是否显示名称
-            itemStyle: {
-              color: '#9ce7f2'
-            },
-            label: {
-              show: false
-            }
-          },
-          data: this.data.point_data_rj
-        } ]
+        }]
       }
     },
 
